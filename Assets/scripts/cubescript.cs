@@ -8,12 +8,18 @@ public class cubescript : MonoBehaviour
     [Space]
     [SerializeField] GameObject blin;
     [Space]
+    [SerializeField] GameObject Vova;
+    [Space]
+    [SerializeField] GameObject shar;
+    [Space]
     [SerializeField] string cubescriptName = "VENOMCUBE";
     // Start is called before the first frame update
     void Start()
     {
      gameObject.name = cubescriptName;
      blin.name = "blinchik";
+        shar.name = "mouse";
+        Vova.name = "AMOGUS";
     }
 
     // Update is called once per frame
