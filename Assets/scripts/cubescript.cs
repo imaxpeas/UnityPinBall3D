@@ -17,9 +17,10 @@ public class cubescript : MonoBehaviour
     void Start()
     {
      gameObject.name = cubescriptName;
-     blin.name = "blinchik";
-        shar.name = "mouse";
+        blin.name = "blinchik";
         Vova.name = "AMOGUS";
+        shar.name = "mouse";
+        
     }
 
     // Update is called once per frame
