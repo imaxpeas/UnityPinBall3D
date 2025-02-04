@@ -18,7 +18,7 @@ public class cubescript : MonoBehaviour
     {
      gameObject.name = cubescriptName;
         blin.name = "blinchik";
-        Vova.name = "AMOGUS";
+        Vova.name = "AMOGUS";       
         shar.name = "mouse";
         
     }
