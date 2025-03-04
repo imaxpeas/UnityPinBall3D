@@ -1,25 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Drain : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-       if (other.gameObject.name == "") 
+        if (other.CompareTag("main ball"))
         {
-            Debug.Log("lose");
+
+            if (GameManager.BallCount > 0)
+            {
+                GameManager.BallCount -= 1;
+                Debug.Log("lost ball");
+                Debug.Log("haha");
+            }
+            else
+            {
+                Debug.Log("game over hahaha");
+            }
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        else if(other.CompareTag("extra"))
+        {
+            Debug.Log("it's extra");
+        }
+        else
+        {
+            Debug.Log("watahell");
+        }
+        Destroy(other.gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
