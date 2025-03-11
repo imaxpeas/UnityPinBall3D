@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class WaterDeliveryScript : MonoBehaviour
 {
-    private int WaterLiters;
+    private int WaterLiters = 10000;
     private int RewardPrecent;
     
 
-    private void start()
+    private void Start()
     {
         if (WaterLiters < 20000)
         {
@@ -24,3 +24,4 @@ public class WaterDeliveryScript : MonoBehaviour
         }
     }   
 }
+//19, 20, 25, 30, 31
