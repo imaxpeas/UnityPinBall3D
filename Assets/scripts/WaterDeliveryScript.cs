@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WaterDeliveryScript : MonoBehaviour
 {
     private int WaterLiters = 10000;
     private int RewardPrecent;
-    
+
 
     private void Start()
     {
@@ -14,7 +12,8 @@ public class WaterDeliveryScript : MonoBehaviour
         {
             Debug.Log("plan not completed");
         }
-        else if (WaterLiters == 20000) 
+        else if (WaterLiters )
+            
         {
             RewardPrecent = RewardPrecent + 10;
         }
@@ -22,6 +21,6 @@ public class WaterDeliveryScript : MonoBehaviour
         {
             RewardPrecent = RewardPrecent + 30;
         }
-    }   
+    }
 }
 //19, 20, 25, 30, 31
