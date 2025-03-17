@@ -12,7 +12,7 @@ public class WaterDeliveryScript : MonoBehaviour
         {
             Debug.Log("plan not completed");
         }
-        else if (WaterLiters )
+        else if (WaterLiters == 20000)
             
         {
             RewardPrecent = RewardPrecent + 10;

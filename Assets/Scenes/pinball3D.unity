@@ -4230,7 +4230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 243392142}
   m_Layer: 0
-  m_Name: spawnPos
+  m_Name: SpawnPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16686,7 +16686,7 @@ Transform:
   m_GameObject: {fileID: 486705687}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.50916535, y: -1.9090729, z: 16.617111}
+  m_LocalPosition: {x: -0.02, y: -1.26, z: 16.617111}
   m_LocalScale: {x: 1.816014, y: 1.816014, z: 1.816014}
   m_ConstrainProportionsScale: 0
   m_Children: []
