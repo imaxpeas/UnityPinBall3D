@@ -8,6 +8,7 @@ TagManager:
   - banana
   - diamond
   - main ball
+  - BonusTrigger
   layers:
   - Default
   - TransparentFX

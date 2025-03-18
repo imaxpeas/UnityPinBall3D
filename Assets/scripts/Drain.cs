@@ -2,28 +2,26 @@ using UnityEngine;
 
 public class Drain : MonoBehaviour
 {
-    [SerializeField] private Transform spawnPos;
-    public GameObject BonusBall;
     [SerializeField] private Transform SpawnPos;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("main ball"))
         {
             if (GameManager.BallCount > 0)
             {
-                Instantiate(other.gameObject).transform.position = spawnPos.position;
+                Instantiate(other.gameObject).transform.position = SpawnPos.position;
                 GameManager.BallCount -= 1;
                 Debug.Log("lost ball");
                 Debug.Log("haha");
 
-                Instantiate(BonusBall).transform.position = SpawnPos.position;
             }
             else
             {
                 Debug.Log("game over hahaha");
             }
         }
-        else if(other.CompareTag("extra"))
+        else if (other.CompareTag("extra"))
         {
             Debug.Log("it's extra");
         }
@@ -32,7 +30,7 @@ public class Drain : MonoBehaviour
             Debug.Log("watahell");
         }
         Destroy(other.gameObject);
-            
+
     }
 
- }
+}
