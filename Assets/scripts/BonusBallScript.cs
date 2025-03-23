@@ -1,14 +1,14 @@
+
 using UnityEngine;
 public class BonusBallScript : MonoBehaviour
 {
     [SerializeField] private GameObject bonusBall;
-    [SerializeField] private Transform spawnPos;
+    [SerializeField] private Transform bonusSpawnPos;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag ("Main Ball"))
+        if (other.CompareTag("main ball"))
         {
-            Instantiate(bonusBall).transform.position = spawnPos.position; 
+            Instantiate(bonusBall).transform.position = bonusSpawnPos.position;
         }
     }
 }
-
