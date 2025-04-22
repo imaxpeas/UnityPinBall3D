@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
+
 {
     [SerializeField] private Animator RightFlipper;
     [SerializeField] private Animator LeftFlipper;
+    [SerializeField] private Animator plunger;
     private void Update()
     {
         FlipperControl();
@@ -20,5 +22,31 @@ public class PlayerController : MonoBehaviour
             LeftFlipper.SetTrigger("push");
         }
 
+    }
+    private void plungerControl()
+    {
+        AnimatorStateInfo stateInfo = plunger.GetCurrentAnimatorStateInfo(0);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (stateInfo.normalizedTime < 0)
+            {
+                plunger.SetFloat("", 0);
+            }
+            else
+            {
+                plunger.SetFloat("", -1);
+            }
+        }
+        else
+        {
+            if (stateInfo.normalizedTime > 1)
+            {
+                plunger.SetFloat("", 0);
+            }
+            else
+            {
+                plunger.SetFloat("", 1);
+            }
+        }
     }
 }
