@@ -7527,7 +7527,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3488
+  m_VersionIndex: 3497
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -7647,9 +7647,9 @@ Animator:
   m_GameObject: {fileID: 2868261531731253142}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 002aeacdc8a7c274887d8a8f3ddff835, type: 2}
+  m_Controller: {fileID: 9100000, guid: bc30c75f32c126b4d8a6be0a2bd356c8, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0

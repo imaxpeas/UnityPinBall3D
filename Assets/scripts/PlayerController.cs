@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         FlipperControl();
+        plungerControl();
     }
     private void FlipperControl()
     {
@@ -30,22 +31,22 @@ public class PlayerController : MonoBehaviour
         {
             if (stateInfo.normalizedTime < 0)
             {
-                plunger.SetFloat("", 0);
+                plunger.SetFloat("push", 0);
             }
             else
             {
-                plunger.SetFloat("", -1);
+                plunger.SetFloat("push", -1);
             }
         }
         else
         {
             if (stateInfo.normalizedTime > 1)
             {
-                plunger.SetFloat("", 0);
+                plunger.SetFloat("push", 0);
             }
             else
             {
-                plunger.SetFloat("", 1);
+                plunger.SetFloat("push", 1);
             }
         }
     }
