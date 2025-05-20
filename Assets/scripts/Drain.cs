@@ -8,10 +8,10 @@ public class Drain : MonoBehaviour
     {
         if (other.CompareTag("main ball"))
         {
-            if (GameManager.BallCount > 0)
+            if (GameManager.LivesCount > 0)
             {
                 Instantiate(other.gameObject).transform.position = SpawnPos.position;
-                GameManager.BallCount -= 1;
+                GameManager.LivesCount -= 1;
                 Debug.Log("lost ball");
                 Debug.Log("haha");
 
